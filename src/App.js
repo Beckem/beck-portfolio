@@ -1,6 +1,7 @@
 import "./App.css";
 import { FullPage, Slide } from "react-full-page";
 import Typed from "react-typed";
+import { useCallback } from "react";
 const colors = [
   "purple",
   "medium-blue",
@@ -15,10 +16,31 @@ const colors = [
   "lightish-red",
   "pink",
 ];
+const CustomControls = ({ getCurrentSlideIndex, scrollToSlide }) => {
+  const currentSlideIndex = getCurrentSlideIndex();
 
+  return (
+    <>
+      <div className="fixed right-[2%] top-1/2 z-50">
+        <div
+          onClick={() => scrollToSlide(0)}
+          className={`control-item ${currentSlideIndex === 0 && "bg-white"}`}
+        ></div>
+        <div
+          onClick={() => scrollToSlide(1)}
+          className={`control-item ${currentSlideIndex === 1 && "bg-white"}`}
+        ></div>
+        <div
+          onClick={() => scrollToSlide(2)}
+          className={`control-item ${currentSlideIndex === 2 && "bg-white"}`}
+        ></div>
+      </div>
+    </>
+  );
+};
 function App() {
   return (
-    <FullPage>
+    <FullPage controls={CustomControls}>
       <Slide className="overflow-hidden">
         <div className="section_1">
           {colors.map((item) => (
@@ -42,7 +64,7 @@ function App() {
           </div>
         </div>
       </Slide>
-      <Slide>abc</Slide>
+      <Slide className="bg-red-200">abc</Slide>
       <Slide>abc</Slide>
     </FullPage>
   );

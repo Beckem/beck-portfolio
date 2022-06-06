@@ -14,3 +14,9 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+@layer components {
+  .control-item {
+    @apply rounded-full border-2 border-white w-4 h-4 mt-4 cursor-pointer;
+  }
+}

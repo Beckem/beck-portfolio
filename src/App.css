@@ -1,21 +1,20 @@
-body {
+.section_1 {
   background: radial-gradient(circle, #24246e, #06051f);
-  overflow: hidden;
   position: relative;
+  overflow: hidden;
+  top: 0;
+  left: 0;
   width: 100vw;
-  height: 100vh;
-}
-body:active div,
-body:active div::before,
-body:active div::after {
-  padding: 40px;
+  height: 200vh;
+  margin: 0;
+  padding: 0;
 }
 
-div,
-div::before,
-div::after {
+.section_1_item,
+.section_1_item::before,
+.section_1_item::after {
   content: "";
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   opacity: 0.9;
@@ -25,7 +24,7 @@ div::after {
 
 .purple {
   -webkit-animation: purple linear 30s alternate infinite;
-          animation: purple linear 30s alternate infinite;
+  animation: purple linear 30s alternate infinite;
   border: 2px solid #241379;
   border-radius: 100%;
   width: 45px;
@@ -36,7 +35,7 @@ div::after {
 
 .purple::before {
   -webkit-animation: purple-pseudo linear 15s alternate infinite;
-          animation: purple-pseudo linear 15s alternate infinite;
+  animation: purple-pseudo linear 15s alternate infinite;
   background: #241379;
   border: 2px solid #241379;
   width: 37px;
@@ -46,7 +45,7 @@ div::after {
 
 .purple::after {
   -webkit-animation: purple-pseudo linear 20s alternate infinite;
-          animation: purple-pseudo linear 20s alternate infinite;
+  animation: purple-pseudo linear 20s alternate infinite;
   border: 2px solid #241379;
   width: 5px;
   height: 14px;
@@ -88,7 +87,7 @@ div::after {
 }
 .medium-blue {
   -webkit-animation: medium-blue linear 30s alternate infinite;
-          animation: medium-blue linear 30s alternate infinite;
+  animation: medium-blue linear 30s alternate infinite;
   border: 2px solid #2185bf;
   border-radius: 100%;
   width: 26px;
@@ -99,7 +98,7 @@ div::after {
 
 .medium-blue::before {
   -webkit-animation: medium-blue-pseudo linear 15s alternate infinite;
-          animation: medium-blue-pseudo linear 15s alternate infinite;
+  animation: medium-blue-pseudo linear 15s alternate infinite;
   background: #2185bf;
   border: 2px solid #2185bf;
   width: 26px;
@@ -109,7 +108,7 @@ div::after {
 
 .medium-blue::after {
   -webkit-animation: medium-blue-pseudo linear 20s alternate infinite;
-          animation: medium-blue-pseudo linear 20s alternate infinite;
+  animation: medium-blue-pseudo linear 20s alternate infinite;
   border: 2px solid #2185bf;
   width: 43px;
   height: 11px;
@@ -151,7 +150,7 @@ div::after {
 }
 .light-blue {
   -webkit-animation: light-blue linear 30s alternate infinite;
-          animation: light-blue linear 30s alternate infinite;
+  animation: light-blue linear 30s alternate infinite;
   border: 2px solid #1fbce1;
   border-radius: 100%;
   width: 25px;
@@ -162,7 +161,7 @@ div::after {
 
 .light-blue::before {
   -webkit-animation: light-blue-pseudo linear 15s alternate infinite;
-          animation: light-blue-pseudo linear 15s alternate infinite;
+  animation: light-blue-pseudo linear 15s alternate infinite;
   background: #1fbce1;
   border: 2px solid #1fbce1;
   width: 16px;
@@ -172,7 +171,7 @@ div::after {
 
 .light-blue::after {
   -webkit-animation: light-blue-pseudo linear 20s alternate infinite;
-          animation: light-blue-pseudo linear 20s alternate infinite;
+  animation: light-blue-pseudo linear 20s alternate infinite;
   border: 2px solid #1fbce1;
   width: 31px;
   height: 48px;
@@ -214,7 +213,7 @@ div::after {
 }
 .red {
   -webkit-animation: red linear 30s alternate infinite;
-          animation: red linear 30s alternate infinite;
+  animation: red linear 30s alternate infinite;
   border: 2px solid #b62f56;
   border-radius: 100%;
   width: 29px;
@@ -225,7 +224,7 @@ div::after {
 
 .red::before {
   -webkit-animation: red-pseudo linear 15s alternate infinite;
-          animation: red-pseudo linear 15s alternate infinite;
+  animation: red-pseudo linear 15s alternate infinite;
   background: #b62f56;
   border: 2px solid #b62f56;
   width: 26px;
@@ -235,7 +234,7 @@ div::after {
 
 .red::after {
   -webkit-animation: red-pseudo linear 20s alternate infinite;
-          animation: red-pseudo linear 20s alternate infinite;
+  animation: red-pseudo linear 20s alternate infinite;
   border: 2px solid #b62f56;
   width: 24px;
   height: 41px;
@@ -277,7 +276,7 @@ div::after {
 }
 .orange {
   -webkit-animation: orange linear 30s alternate infinite;
-          animation: orange linear 30s alternate infinite;
+  animation: orange linear 30s alternate infinite;
   border: 2px solid #d5764c;
   border-radius: 100%;
   width: 19px;
@@ -288,7 +287,7 @@ div::after {
 
 .orange::before {
   -webkit-animation: orange-pseudo linear 15s alternate infinite;
-          animation: orange-pseudo linear 15s alternate infinite;
+  animation: orange-pseudo linear 15s alternate infinite;
   background: #d5764c;
   border: 2px solid #d5764c;
   width: 8px;
@@ -298,7 +297,7 @@ div::after {
 
 .orange::after {
   -webkit-animation: orange-pseudo linear 20s alternate infinite;
-          animation: orange-pseudo linear 20s alternate infinite;
+  animation: orange-pseudo linear 20s alternate infinite;
   border: 2px solid #d5764c;
   width: 42px;
   height: 36px;
@@ -340,7 +339,7 @@ div::after {
 }
 .yellow {
   -webkit-animation: yellow linear 30s alternate infinite;
-          animation: yellow linear 30s alternate infinite;
+  animation: yellow linear 30s alternate infinite;
   border: 2px solid #ffd53e;
   border-radius: 100%;
   width: 36px;
@@ -351,7 +350,7 @@ div::after {
 
 .yellow::before {
   -webkit-animation: yellow-pseudo linear 15s alternate infinite;
-          animation: yellow-pseudo linear 15s alternate infinite;
+  animation: yellow-pseudo linear 15s alternate infinite;
   background: #ffd53e;
   border: 2px solid #ffd53e;
   width: 34px;
@@ -361,7 +360,7 @@ div::after {
 
 .yellow::after {
   -webkit-animation: yellow-pseudo linear 20s alternate infinite;
-          animation: yellow-pseudo linear 20s alternate infinite;
+  animation: yellow-pseudo linear 20s alternate infinite;
   border: 2px solid #ffd53e;
   width: 39px;
   height: 7px;
@@ -403,7 +402,7 @@ div::after {
 }
 .cyan {
   -webkit-animation: cyan linear 30s alternate infinite;
-          animation: cyan linear 30s alternate infinite;
+  animation: cyan linear 30s alternate infinite;
   border: 2px solid #78ffba;
   border-radius: 100%;
   width: 34px;
@@ -414,7 +413,7 @@ div::after {
 
 .cyan::before {
   -webkit-animation: cyan-pseudo linear 15s alternate infinite;
-          animation: cyan-pseudo linear 15s alternate infinite;
+  animation: cyan-pseudo linear 15s alternate infinite;
   background: #78ffba;
   border: 2px solid #78ffba;
   width: 49px;
@@ -424,7 +423,7 @@ div::after {
 
 .cyan::after {
   -webkit-animation: cyan-pseudo linear 20s alternate infinite;
-          animation: cyan-pseudo linear 20s alternate infinite;
+  animation: cyan-pseudo linear 20s alternate infinite;
   border: 2px solid #78ffba;
   width: 21px;
   height: 11px;
@@ -466,7 +465,7 @@ div::after {
 }
 .light-green {
   -webkit-animation: light-green linear 30s alternate infinite;
-          animation: light-green linear 30s alternate infinite;
+  animation: light-green linear 30s alternate infinite;
   border: 2px solid #98fd85;
   border-radius: 100%;
   width: 47px;
@@ -477,7 +476,7 @@ div::after {
 
 .light-green::before {
   -webkit-animation: light-green-pseudo linear 15s alternate infinite;
-          animation: light-green-pseudo linear 15s alternate infinite;
+  animation: light-green-pseudo linear 15s alternate infinite;
   background: #98fd85;
   border: 2px solid #98fd85;
   width: 36px;
@@ -487,7 +486,7 @@ div::after {
 
 .light-green::after {
   -webkit-animation: light-green-pseudo linear 20s alternate infinite;
-          animation: light-green-pseudo linear 20s alternate infinite;
+  animation: light-green-pseudo linear 20s alternate infinite;
   border: 2px solid #98fd85;
   width: 48px;
   height: 48px;
@@ -529,7 +528,7 @@ div::after {
 }
 .lime {
   -webkit-animation: lime linear 30s alternate infinite;
-          animation: lime linear 30s alternate infinite;
+  animation: lime linear 30s alternate infinite;
   border: 2px solid #befb46;
   border-radius: 100%;
   width: 6px;
@@ -540,7 +539,7 @@ div::after {
 
 .lime::before {
   -webkit-animation: lime-pseudo linear 15s alternate infinite;
-          animation: lime-pseudo linear 15s alternate infinite;
+  animation: lime-pseudo linear 15s alternate infinite;
   background: #befb46;
   border: 2px solid #befb46;
   width: 40px;
@@ -550,7 +549,7 @@ div::after {
 
 .lime::after {
   -webkit-animation: lime-pseudo linear 20s alternate infinite;
-          animation: lime-pseudo linear 20s alternate infinite;
+  animation: lime-pseudo linear 20s alternate infinite;
   border: 2px solid #befb46;
   width: 49px;
   height: 13px;
@@ -592,7 +591,7 @@ div::after {
 }
 .magenta {
   -webkit-animation: magenta linear 30s alternate infinite;
-          animation: magenta linear 30s alternate infinite;
+  animation: magenta linear 30s alternate infinite;
   border: 2px solid #6c046c;
   border-radius: 100%;
   width: 23px;
@@ -603,7 +602,7 @@ div::after {
 
 .magenta::before {
   -webkit-animation: magenta-pseudo linear 15s alternate infinite;
-          animation: magenta-pseudo linear 15s alternate infinite;
+  animation: magenta-pseudo linear 15s alternate infinite;
   background: #6c046c;
   border: 2px solid #6c046c;
   width: 47px;
@@ -613,7 +612,7 @@ div::after {
 
 .magenta::after {
   -webkit-animation: magenta-pseudo linear 20s alternate infinite;
-          animation: magenta-pseudo linear 20s alternate infinite;
+  animation: magenta-pseudo linear 20s alternate infinite;
   border: 2px solid #6c046c;
   width: 21px;
   height: 37px;
@@ -655,7 +654,7 @@ div::after {
 }
 .lightish-red {
   -webkit-animation: lightish-red linear 30s alternate infinite;
-          animation: lightish-red linear 30s alternate infinite;
+  animation: lightish-red linear 30s alternate infinite;
   border: 2px solid #f04c81;
   border-radius: 100%;
   width: 37px;
@@ -666,7 +665,7 @@ div::after {
 
 .lightish-red::before {
   -webkit-animation: lightish-red-pseudo linear 15s alternate infinite;
-          animation: lightish-red-pseudo linear 15s alternate infinite;
+  animation: lightish-red-pseudo linear 15s alternate infinite;
   background: #f04c81;
   border: 2px solid #f04c81;
   width: 47px;
@@ -676,7 +675,7 @@ div::after {
 
 .lightish-red::after {
   -webkit-animation: lightish-red-pseudo linear 20s alternate infinite;
-          animation: lightish-red-pseudo linear 20s alternate infinite;
+  animation: lightish-red-pseudo linear 20s alternate infinite;
   border: 2px solid #f04c81;
   width: 32px;
   height: 8px;
@@ -718,7 +717,7 @@ div::after {
 }
 .pink {
   -webkit-animation: pink linear 30s alternate infinite;
-          animation: pink linear 30s alternate infinite;
+  animation: pink linear 30s alternate infinite;
   border: 2px solid #ff4293;
   border-radius: 100%;
   width: 33px;
@@ -729,7 +728,7 @@ div::after {
 
 .pink::before {
   -webkit-animation: pink-pseudo linear 15s alternate infinite;
-          animation: pink-pseudo linear 15s alternate infinite;
+  animation: pink-pseudo linear 15s alternate infinite;
   background: #ff4293;
   border: 2px solid #ff4293;
   width: 5px;
@@ -739,7 +738,7 @@ div::after {
 
 .pink::after {
   -webkit-animation: pink-pseudo linear 20s alternate infinite;
-          animation: pink-pseudo linear 20s alternate infinite;
+  animation: pink-pseudo linear 20s alternate infinite;
   border: 2px solid #ff4293;
   width: 38px;
   height: 45px;

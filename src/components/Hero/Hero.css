@@ -14,7 +14,7 @@
 .section_1_item::before,
 .section_1_item::after {
   content: "";
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   opacity: 0.9;

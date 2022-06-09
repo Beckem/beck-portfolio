@@ -19,4 +19,10 @@ code {
   .control-item {
     @apply rounded-full border-2 border-white w-4 h-4 mt-4 cursor-pointer;
   }
+  .input-contact {
+    @apply rounded-full border border-white bg-transparent py-3 px-6 text-white focus:outline-none focus:ring focus:ring-green-400 focus:border-none;
+  }
+  .social-icon {
+    @apply w-6 h-6 fill-white cursor-pointer;
+  }
 }

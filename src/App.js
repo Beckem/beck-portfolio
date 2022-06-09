@@ -10,7 +10,16 @@ const CustomControls = ({ getCurrentSlideIndex, scrollToSlide }) => {
   return (
     <>
       <div className="fixed right-[2%] top-1/2 z-50">
-        <div
+        {[0, 1, 2, 3].map((index) => (
+          <div
+            key={index}
+            onClick={() => scrollToSlide(index)}
+            className={`control-item ${
+              currentSlideIndex === index && "bg-white"
+            }`}
+          ></div>
+        ))}
+        {/* <div
           onClick={() => scrollToSlide(0)}
           className={`control-item ${currentSlideIndex === 0 && "bg-white"}`}
         ></div>
@@ -25,7 +34,7 @@ const CustomControls = ({ getCurrentSlideIndex, scrollToSlide }) => {
         <div
           onClick={() => scrollToSlide(3)}
           className={`control-item ${currentSlideIndex === 3 && "bg-white"}`}
-        ></div>
+        ></div> */}
       </div>
     </>
   );

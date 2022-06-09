@@ -1,4 +1,6 @@
 import React, { useRef } from "react";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import {
   LocationMarkerIcon,
   MailIcon,
@@ -8,6 +10,28 @@ import emailjs from "@emailjs/browser";
 import Footer from "./Footer";
 function Contact() {
   const form = useRef();
+
+  const sendEmailSuccess = () =>
+    toast("🦄 Message has been sent!", {
+      position: "top-right",
+      autoClose: 3000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+    });
+
+  const sendEmailError = () =>
+    toast("❗Oops! Something went wrong! Try again", {
+      position: "top-right",
+      autoClose: 3000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+    });
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -21,10 +45,10 @@ function Contact() {
       )
       .then(
         (result) => {
-          console.log(result.text);
+          sendEmailSuccess();
         },
         (error) => {
-          console.log(error.text);
+          sendEmailError();
         }
       );
 
@@ -39,7 +63,7 @@ function Contact() {
         </h2>
         <p className="text-center mt-4 text-lg text-white drop-shadow">
           My inbox is always open. Whether you have a question or just want to
-          say hi, I’ll try my best to get back to you!
+          say hi, I'll try my best to get back to you!
         </p>
 
         <div className="flex mt-12">
@@ -105,6 +129,7 @@ function Contact() {
           </form>
         </div>
       </div>
+      <ToastContainer />
 
       <Footer />
     </div>

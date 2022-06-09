@@ -2,7 +2,7 @@ import { FullPage, Slide } from "react-full-page";
 import About from "./components/About";
 import Contact from "./components/Contact";
 import Hero from "./components/Hero/Hero";
-import Projects from "./components/Hero/Projects";
+import Projects from "./components/Projects/Projects";
 
 const CustomControls = ({ getCurrentSlideIndex, scrollToSlide }) => {
   const currentSlideIndex = getCurrentSlideIndex();
@@ -19,22 +19,6 @@ const CustomControls = ({ getCurrentSlideIndex, scrollToSlide }) => {
             }`}
           ></div>
         ))}
-        {/* <div
-          onClick={() => scrollToSlide(0)}
-          className={`control-item ${currentSlideIndex === 0 && "bg-white"}`}
-        ></div>
-        <div
-          onClick={() => scrollToSlide(1)}
-          className={`control-item ${currentSlideIndex === 1 && "bg-white"}`}
-        ></div>
-        <div
-          onClick={() => scrollToSlide(2)}
-          className={`control-item ${currentSlideIndex === 2 && "bg-white"}`}
-        ></div>
-        <div
-          onClick={() => scrollToSlide(3)}
-          className={`control-item ${currentSlideIndex === 3 && "bg-white"}`}
-        ></div> */}
       </div>
     </>
   );

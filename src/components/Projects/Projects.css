@@ -1,0 +1,78 @@
+.card-container {
+  perspective: 50em;
+}
+
+.card-container {
+  --bi: linear-gradient(#555 2em, #0000 3em),
+    linear-gradient(60deg, #880e4f, #1a237e);
+}
+
+.card {
+  position: relative;
+  width: 300px;
+  height: 320px;
+  padding: 4px 12px;
+  color: #fff;
+  transform: rotateY(20deg) rotateX(15deg);
+  transform-style: preserve-3d;
+  transition: transform 0.8s;
+  cursor: pointer;
+}
+.card:hover {
+  transform: rotateY(-20deg) rotateX(-15deg);
+}
+
+.layers {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  z-index: -1;
+}
+
+.layer {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 1em;
+  background-image: var(--bi);
+  transform: translateZ(var(--tz));
+  box-shadow: 0 0 0.5em #000d inset;
+}
+.layer:nth-child(1) {
+  --tz: 0px;
+}
+.layer:nth-child(2) {
+  --tz: -4px;
+}
+.layer:nth-child(3) {
+  --tz: -8px;
+}
+.layer:nth-child(4) {
+  --tz: -12px;
+}
+.layer:nth-child(5) {
+  --tz: -16px;
+}
+.layer:nth-child(6) {
+  --tz: -20px;
+}
+.layer:nth-child(7) {
+  --tz: -24px;
+}
+.layer:nth-child(8) {
+  --tz: -28px;
+}
+.layer:nth-child(9) {
+  --tz: -32px;
+}
+.layer:nth-child(10) {
+  --tz: -36px;
+}
+.layer:last-child {
+  box-shadow: 0 0 0.5em #000d inset, 0 0 5px #000;
+}

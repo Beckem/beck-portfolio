@@ -1,7 +1,9 @@
 .section_1 {
-  background: radial-gradient(circle, #24246e, #06051f);
+  /* background: radial-gradient(circle, #24246e, #06051f); */
+  /* bg-gradient-to-r from-[#4568dc] to-[#b06ab3] */
+  background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
   position: relative;
-  overflow: hidden;
+
   top: 0;
   left: 0;
   width: 100vw;

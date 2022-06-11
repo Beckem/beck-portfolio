@@ -56,7 +56,7 @@ function Contact() {
   };
 
   return (
-    <div className="bg-gradient-to-r from-[#0f0c29] via-[#302b63] to-[#24243e] h-screen w-screen">
+    <div className="bg-gradient h-screen w-screen">
       <div className="w-[70%] mx-auto py-[100px]">
         <h2 className="text-5xl text-center font-semibold text-[#ff7675]">
           Get In Touch

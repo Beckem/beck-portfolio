@@ -8,6 +8,12 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+body::-webkit-scrollbar {
+  display: none;
 }
 
 code {
@@ -24,5 +30,9 @@ code {
   }
   .social-icon {
     @apply w-6 h-6 fill-white cursor-pointer;
+  }
+
+  .bg-gradient {
+    @apply bg-gradient-to-r from-[#0f0c29] via-[#302b63] to-[#24243e];
   }
 }

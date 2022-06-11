@@ -3,7 +3,7 @@ import LaptopBg from "../assets/images/LaptopBg2.png";
 
 function About() {
   return (
-    <div className="h-screen w-screen bg-gradient-to-r from-[#4568dc] to-[#b06ab3] ">
+    <div className="h-screen w-screen bg-gradient ">
       <div
         className="bg-[length:80%] bg-no-repeat bg-center h-screen w-screen z-20 relative"
         style={{

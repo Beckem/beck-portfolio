@@ -26,7 +26,7 @@ function About() {
   return (
     <div className="h-screen w-screen bg-gradient ">
       <div
-        className="bg-[length:80%] bg-no-repeat bg-center h-screen w-screen z-20 relative"
+        className="bg-[length:80%] bg-no-repeat bg-center h-screen w-screen relative"
         style={{
           backgroundImage: `url(${LaptopBg})`,
         }}

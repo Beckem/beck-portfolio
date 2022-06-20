@@ -5,24 +5,24 @@ import { ReactComponent as GithubIcon } from "../assets/svgs/Github.svg";
 import { ReactComponent as TwitterIcon } from "../assets/svgs/Twitter.svg";
 function Footer() {
   return (
-    <div className="bg-black bg-opacity-30 h-full text-white flex p-12 justify-around">
-      <div className="text-2xl font-semibold text-green-400">Beckem</div>
+    <div className="bg-black bg-opacity-20 h-full text-white flex p-12 justify-around">
+      <div className="text-3xl font-semibold text-green-400">𝔅𝔢𝔠𝔨𝔢𝔪</div>
       <p className="font-light ">© Copyright 2022. All right reserved</p>
       <div className="flex space-x-4">
         <a href="https://www.facebook.com/profile.php?id=100009745262096">
-          <FacebookIcon className="social-icon" />
+          <FacebookIcon className="social-icon fill-[#4267B2]" />
         </a>
 
         <a href="https://www.linkedin.com/in/quyhaphu01">
-          <LinkedInIcon className="social-icon" />
+          <LinkedInIcon className="social-icon fill-[#0077B5]" />
         </a>
 
         <a href="https://github.com/Beckem">
-          <GithubIcon className="social-icon" />
+          <GithubIcon className="social-icon fill-[#171515]" />
         </a>
 
         <a href="https://twitter.com/QuH78090657">
-          <TwitterIcon className="social-icon" />
+          <TwitterIcon className="social-icon fill-[#1DA1F2] " />
         </a>
       </div>
     </div>

@@ -54,13 +54,17 @@ const projects = [
     image: Project5,
     technologies: ["NextJS", "TailwindCSS", "Redux", "Firebase", "Stripe"],
     details: "Small project clone Amazon.com",
-    link: "https://airbnb-clone-beckem.vercel.app",
+    link: "https://amazon-clone-2-0-pi.vercel.app",
   },
   {
     title: "Project1",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit.Quoddsadsadqweqmw,emqem",
     image: "",
+    technologies: ["abc", "abc"],
+    details:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit.Quoddsadsadqweqmw,emqem",
+    link: "#",
   },
 ];
 

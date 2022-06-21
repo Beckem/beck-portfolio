@@ -29,7 +29,7 @@ code {
     @apply rounded-full border border-white bg-transparent py-3 px-6 text-white focus:outline-none focus:ring focus:ring-green-400 focus:border-none;
   }
   .social-icon {
-    @apply w-6 h-6 fill-white cursor-pointer;
+    @apply w-7 h-7  cursor-pointer;
   }
 
   .bg-gradient {

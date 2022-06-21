@@ -79,7 +79,7 @@ function Contact() {
           variants={variant}
           initial="hidden"
           animate={control}
-          transition={{ ease: "easeOut", duration: 0.8 }}
+          transition={{ ease: "easeOut", duration: 0.5 }}
           className="text-5xl text-center font-semibold text-[#ff7675]"
         >
           Get In Touch
@@ -88,7 +88,7 @@ function Contact() {
           variants={variant}
           initial="hidden"
           animate={control}
-          transition={{ ease: "easeOut", duration: 0.6, delay: 0.8 }}
+          transition={{ ease: "easeOut", duration: 0.5, delay: 0.5 }}
           className="text-center mt-4 text-lg text-white drop-shadow"
         >
           My inbox is always open. Whether you have a question or just want to
@@ -100,7 +100,7 @@ function Contact() {
             variants={variant}
             initial="hidden"
             animate={control}
-            transition={{ ease: "easeOut", duration: 0.6, delay: 1.4 }}
+            transition={{ ease: "easeOut", duration: 0.5, delay: 1 }}
             className="flex flex-col space-y-16 text-white flex-[2]"
           >
             <div className="flex items-center space-x-6">
@@ -127,7 +127,7 @@ function Contact() {
             variants={variant}
             initial="hidden"
             animate={control}
-            transition={{ ease: "easeOut", duration: 0.6, delay: 2 }}
+            transition={{ ease: "easeOut", duration: 0.5, delay: 1.5 }}
             ref={form}
             className="flex flex-col flex-[3] space-y-8"
             onSubmit={sendEmail}
@@ -137,14 +137,16 @@ function Contact() {
               placeholder="Full Name"
               name="name"
               className="input-contact"
+              required
             />
 
             <div className="flex justify-between space-x-6">
               <input
-                type="text"
+                type="email"
                 placeholder="Email"
                 name="email"
                 className="input-contact flex-1"
+                required
               />
               <input
                 type="text"

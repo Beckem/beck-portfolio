@@ -73,14 +73,14 @@ function Contact() {
   };
 
   return (
-    <div className="bg-gradient h-screen w-screen">
-      <div ref={ref} className="w-[70%] mx-auto py-[100px]">
+    <div className="bg-gradient md:h-screen w-screen">
+      <div ref={ref} className="w-[70%] mx-auto py-[20px] md:py-[100px]">
         <motion.h2
           variants={variant}
           initial="hidden"
           animate={control}
           transition={{ ease: "easeOut", duration: 0.5 }}
-          className="text-5xl text-center font-semibold text-[#ff7675]"
+          className="text-3xl md:text-5xl text-center font-semibold text-[#ff7675]"
         >
           Get In Touch
         </motion.h2>
@@ -89,37 +89,37 @@ function Contact() {
           initial="hidden"
           animate={control}
           transition={{ ease: "easeOut", duration: 0.5, delay: 0.5 }}
-          className="text-center mt-4 text-lg text-white drop-shadow"
+          className="text-center mt-4 md:text-lg text-sm text-white drop-shadow"
         >
           My inbox is always open. Whether you have a question or just want to
           say hi, I'll try my best to get back to you!
         </motion.p>
 
-        <div className="flex mt-12">
+        <div className="flex flex-col md:flex-row md:mt-12 mt-6 gap-4">
           <motion.div
             variants={variant}
             initial="hidden"
             animate={control}
             transition={{ ease: "easeOut", duration: 0.5, delay: 1 }}
-            className="flex flex-col space-y-16 text-white flex-[2]"
+            className="flex flex-col md:space-y-16 space-y-4 text-white flex-[2]"
           >
             <div className="flex items-center space-x-6">
-              <div className="h-16 w-16 rounded-full bg-green-400 relative">
-                <LocationMarkerIcon className="h-8 w-8 absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2" />
+              <div className="contact-icon-container">
+                <LocationMarkerIcon className="contact-icon" />
               </div>
-              <div className="text-lg">Bac Ninh, Viet Nam</div>
+              <div className="md:text-lg text-sm">Bac Ninh, Viet Nam</div>
             </div>
             <div className="flex items-center space-x-6">
-              <div className="h-16 w-16 rounded-full bg-green-400 relative">
-                <MailIcon className="h-8 w-8 absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2" />
+              <div className="contact-icon-container">
+                <MailIcon className="contact-icon" />
               </div>
-              <div className="text-lg">quyhaphu01@gmail.com</div>
+              <div className="md:text-lg text-sm">quyhaphu01@gmail.com</div>
             </div>
             <div className="flex items-center space-x-6">
-              <div className="h-16 w-16 rounded-full bg-green-400 relative">
-                <PhoneIcon className="h-8 w-8 absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2" />
+              <div className="contact-icon-container">
+                <PhoneIcon className="contact-icon" />
               </div>
-              <div className="text-lg ">+84-889912777</div>
+              <div className="md:text-lg text-sm">+84-889912777</div>
             </div>
           </motion.div>
 
@@ -129,7 +129,7 @@ function Contact() {
             animate={control}
             transition={{ ease: "easeOut", duration: 0.5, delay: 1.5 }}
             ref={form}
-            className="flex flex-col flex-[3] space-y-8"
+            className="flex flex-col flex-[3] md:space-y-8 space-y-4"
             onSubmit={sendEmail}
           >
             <input
@@ -140,7 +140,7 @@ function Contact() {
               required
             />
 
-            <div className="flex justify-between space-x-6">
+            <div className="flex flex-col md:flex-row justify-between gap-4">
               <input
                 type="email"
                 placeholder="Email"
@@ -158,14 +158,14 @@ function Contact() {
 
             <textarea
               className="input-contact rounded-xl"
-              rows={8}
+              rows={7}
               placeholder="Message"
               name="message"
             ></textarea>
             <input
               type="submit"
               value="Send"
-              className="bg-green-400 w-max px-10 py-3 text-lg rounded-full text-white cursor-pointer hover:bg-green-600"
+              className="bg-green-400 w-max px-10 py-3 text-lg rounded-full text-white cursor-pointer hover:bg-green-600 md:mx-0 mx-auto"
             />
           </motion.form>
         </div>

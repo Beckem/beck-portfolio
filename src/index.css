@@ -26,12 +26,17 @@ code {
     @apply rounded-full border-2 border-white w-4 h-4 mt-4 cursor-pointer;
   }
   .input-contact {
-    @apply rounded-full border border-white bg-transparent py-3 px-6 text-white focus:outline-none focus:ring focus:ring-green-400 focus:border-none;
+    @apply rounded-full border border-white bg-transparent md:py-3 py-1 px-6 text-white focus:outline-none focus:ring focus:ring-green-400 focus:border-none;
   }
   .social-icon {
-    @apply w-7 h-7  cursor-pointer;
+    @apply md:w-7 md:h-7 w-5 h-5  cursor-pointer;
   }
-
+  .contact-icon {
+    @apply md:h-8 md:w-8 h-5 w-5 absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2;
+  }
+  .contact-icon-container {
+    @apply md:h-16 md:w-16 h-10 w-10 rounded-full bg-green-400 relative;
+  }
   .bg-gradient {
     @apply bg-gradient-to-r from-[#0f0c29] via-[#302b63] to-[#24243e];
   }

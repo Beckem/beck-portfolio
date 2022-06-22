@@ -70,7 +70,7 @@ const projects = [
 
 function Projects() {
   return (
-    <div className="h-screen bg-gradient pt-[100px]">
+    <div className="md:h-screen bg-gradient py-[100px]">
       <div className="w-[80%] mx-auto grid md:grid-cols-3 grid-cols-1 gap-20">
         {projects.map((project, index) => (
           <CardProject

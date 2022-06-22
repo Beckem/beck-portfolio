@@ -37,7 +37,7 @@ function CardProject({
 
   return (
     <>
-      <div className="card-container" onClick={openModal}>
+      <div className="card-container mx-auto" onClick={openModal}>
         <div className="card">
           <h3 className="text-lg font-semibold text-green-400">{title}</h3>
           <p className="mt-2">{description}</p>

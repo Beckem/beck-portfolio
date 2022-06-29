@@ -80,7 +80,7 @@ function Contact() {
           initial="hidden"
           animate={control}
           transition={{ ease: "easeOut", duration: 0.5 }}
-          className="text-3xl md:text-5xl text-center font-semibold text-[#ff7675]"
+          className="title-1"
         >
           Get In Touch
         </motion.h2>

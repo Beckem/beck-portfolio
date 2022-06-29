@@ -9,8 +9,8 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 body::-webkit-scrollbar {
   display: none;
@@ -39,5 +39,8 @@ code {
   }
   .bg-gradient {
     @apply bg-gradient-to-r from-[#0f0c29] via-[#302b63] to-[#24243e];
+  }
+  .title-1 {
+    @apply text-3xl md:text-5xl text-center font-semibold text-[#ff7675];
   }
 }

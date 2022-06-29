@@ -70,8 +70,9 @@ const projects = [
 
 function Projects() {
   return (
-    <div className="md:h-screen bg-gradient py-[100px]">
-      <div className="w-[80%] mx-auto grid md:grid-cols-3 grid-cols-1 gap-20">
+    <div className="h-screen bg-gradient py-[100px] relative">
+      <h2 className="title-1">Projects</h2>
+      <div className="flex items-center overflow-auto space-x-24  absolute top-1/2 -translate-y-1/2 px-20 pt-10 pb-20 w-screen custom-scrollbar">
         {projects.map((project, index) => (
           <CardProject
             key={index}

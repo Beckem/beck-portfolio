@@ -70,21 +70,21 @@ function CardProject({
         style={customStyles}
         contentLabel="Example Modal"
       >
-        <div className="px-4">
+        <div className="md:px-4 px-0">
           <button onClick={closeModal}>
             <XCircleIcon className="w-8 h-8 absolute right-1 top-1 text-red-500" />
           </button>
 
-          <div className="flex space-x-6">
-            <div className="flex-[3]">
+          <div className="flex md:flex-row flex-col gap-6">
+            <div className="md:flex-[3]">
               <img src={image} alt="project" className="rounded-lg w-full" />
-              <a className="visit-btn mt-4" href={link}>
+              <a className="visit-btn md:w-[400px] md:h-[40px] w-[200px] h-[20px] mt-4" href={link}>
                 <span>{link?.split("//")[1]}</span>
                 <span>Visit Page</span>
               </a>
             </div>
 
-            <div className="flex-[2] space-y-4">
+            <div className="md:flex-[2] space-y-4 mt-4 md:mt-0">
               <p className="text-base font-medium text-neutral-600">
                 <span className="font-semibold text-lg text-neutral-700">
                   Description:{" "}

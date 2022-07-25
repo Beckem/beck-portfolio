@@ -28,9 +28,14 @@ function Hero() {
             Hi, I'm Phu Quy
           </div>
         </div>
-        <div className="absolute top-[42vh] left-1/2 -translate-x-1/2 font-semibold">
+        <div className="absolute top-[calc(40vh+1.5rem)] left-1/2 -translate-x-1/2 font-semibold">
           <div className="text-[#ff7675] md:text-6xl text-4xl md:pt-12 pt-6 text-center">
             Software Engineer
+          </div>
+        </div>
+        <div className="absolute top-[calc(40vh+6.2rem)] left-1/2 -translate-x-1/2 font-semibold">
+          <div className="text-[#fdcb6e] md:text-4xl text-2xl md:pt-12 pt-6 text-center">
+          Blockchain Enthusiast
           </div>
         </div>
 

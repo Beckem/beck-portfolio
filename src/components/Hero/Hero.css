@@ -780,3 +780,184 @@
     transform: translate3d(27vw, -22vh, 0) rotate(287deg);
   }
 }
+
+
+@media (max-width: 768px) {
+  .purple {
+    width: 30px;
+    height: 30px;
+  }
+  .purple::before {
+    width: 27px;
+    height: 22px;
+  }
+  .purple::after {
+    width: 4px;
+    height: 13px;
+  }
+
+  .medium-blue{
+    width: 20px;
+    height:20px;
+  }
+
+  .medium-blue::before{
+    width: 20px;
+    height:10px;
+  }
+
+  .medium-blue:after{
+    width: 30px;
+    height:8px;
+  }
+
+  .light-blue{
+    width: 20px;
+    height:20px;
+  }
+
+  .light-blue::before{
+    width: 12px;
+    height:12px;
+  }
+
+  .light-blue:after{
+    width: 21px;
+    height:37px;
+  }
+
+  .red{
+    width: 21px;
+    height:21px;
+  }
+
+  .red::before{
+    width: 20px;
+    height:30px;
+  }
+
+  .red:after{
+    width: 19px;
+    height:31px;
+  }
+
+  .orange{
+    width: 14px;
+    height:14px;
+  }
+
+  .orange::before{
+    width: 6px;
+    height:21px;
+  }
+
+  .orange:after{
+    width: 36px;
+    height: 28px;
+  }
+
+  .yellow{
+    width: 28px;
+    height:28px;
+  }
+
+  .yellow::before{
+    width: 27px;
+    height:9px;
+  }
+
+  .yellow:after{
+    width: 30px;
+    height:5px;
+  }
+
+  .cyan{
+    width: 27px;
+    height:27px;
+  }
+
+  .cyan::before{
+    width: 34px;
+    height:7px;
+  }
+
+  .cyan:after{
+    width: 15px;
+    height:7px;
+  }
+
+  .light-green{
+    width: 35px;
+    height:35px;
+  }
+
+  .light-green::before{
+    width: 28px;
+    height:35px;
+  }
+
+  .light-green:after{
+    width: 36px;
+    height:36px;
+  }
+
+  .lime{
+    width: 6px;
+    height:6px;
+  }
+
+  .lime::before{
+    width: 29px;
+    height:7px;
+  }
+
+  .lime:after{
+    width: 39px;
+    height:8px;
+  }
+
+  .magenta{
+    width: 18px;
+    height:18px;
+  }
+
+  .magenta::before{
+    width: 38px;
+    height:20px;
+  }
+
+  .magenta:after{
+    width: 16px;
+    height:29px;
+  }
+
+  .lightish-red{
+    width: 29px;
+    height:29px;
+  }
+
+  .lightish-red::before{
+    width: 39px;
+    height:21px;
+  }
+
+  .lightish-red:after{
+    width: 24px;
+    height:6px;
+  }
+  .pink{
+    width: 25px;
+    height:25px;
+  }
+
+  .pink::before{
+    width: 3px;
+    height:14px;
+  }
+
+  .pink:after{
+    width: 30px;
+    height:36px;
+  }
+}
+
